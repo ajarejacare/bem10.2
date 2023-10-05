@@ -1,0 +1,93 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+:root{
+    --visor: #1cd947;
+    --visorAlbedo: #f5031c;
+    --visorScanner: #f5d103;
+
+
+    --padrao: #0e5e18;
+    --padraoAlbedo: #800000;
+
+    --espera: #009216;
+    --esperaAlbedo: #920000;
+
+    --cinza: #686f69;
+    --fundo: #092e00;
+    --fundoAlbedo: #2e0000;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    background: var(--fundo);
+}
+
+.omnitrix{
+    position: relative;
+}
+
+.omnitrix .base{
+    position: relative;
+    width:  20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background-color: var(--cinza);
+    box-shadow: inset 4px 4px 18px 7px rgba(0 ,0 ,0 , .75);
+}
+
+.omnitrix .base .diskpart{
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border: solid 2px black;
+    background: var(--cinza);
+    box-shadow: inset 0px 0px 18px 0 rgba(0 ,0 ,0 , 0.75 );
+}
+
+.omnitrix .base .diskpart.esq-super{
+    top:0rem;
+    left:0rem;
+    border-radius: 100% 0% 0% 0%;
+
+}
+
+
+.omnitrix .base .diskpart.esq-inf{
+    top:10rem;
+    left:0rem;
+    border-radius: 0% 100% 0% 0%;
+
+}
+
+.omnitrix .base .diskpart.dir-super{
+    top:10rem;
+    left:0rem;
+    border-radius: 0% 0% 0% 100%;
+
+}
+
+.omnitrix .base .diskpart.dir-inf{
+    top:10rem;
+    left:10rem;
+    border-radius: 0% 0% 100% 0%;
+
+}
+
+.omnitrix .base .dsico .anel{
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-color: var(--visor);
+    transform: rotate(180deg);
+}
